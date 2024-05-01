@@ -4,7 +4,7 @@
       <div class="mt-5 block w-full ">
         <%= form_with url: '/pokemons' do |f|%>
           <%= f.label :birthday do %>
-            <p class="text-2xl sm:text-3xl  tracking-tighter ">誕生日を入力して<span><br class="sm:hidden">Birth&nbsp;Dayポケモンを捕まえよう<span></p>
+            <p class="text-2xl sm:text-3xl  tracking-tighter ">誕生日を入力して<span><br class="sm:hidden">ポケモンを捕まえよう<span></p>
           <% end %>
           <div class="mt-3 max-w-[300px] mx-auto">
             <%= f.number_field :birthday ,minlength: 4,maxlength: 4, placeholder: "1月1日 →  '0101'  で入力",class: "w-[100%] text-gray-900 no-spin" %>
