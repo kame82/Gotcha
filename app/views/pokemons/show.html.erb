@@ -10,7 +10,7 @@
       <div><%= image_tag @data["sprites"]["front_default"], class: "mx-auto w-[220px] md:w-[300px]" %></div>
     </div>
     <div class="text-center sm:flex justify-center gap-1">
-      <%= link_to "https://twitter.com/share?url=https://my-mini-app-chew.onrender.com&text=私の誕生日（#{@birthM}月#{@birthD}日）ポケモンは、「#{@jpdata["names"][0]["name"]}」でした！%0a&hashtags=ミニアプリweek", target: '_blank', class: "max-w[220px] w-max" do %>
+      <%= link_to "https://twitter.com/intent/tweet?url=https://pokebirth.onrender.com&text=私の誕生日（#{@birthM}月#{@birthD}日）ポケモンは、「#{@jpdata["names"][0]["name"]}」でした！%0a&hashtags=誕生日ポケモン", target: '_blank', class: "max-w[220px] w-max" do %>
       <div class="text-gray-800 text-2xl btn btn-accent w-max max-w-[220px] btnHover"> Twitter(X)で共有</div>
       <% end %>
       <%= link_to "Homeに戻る" ,root_path ,class: "text-gray-800 text-2xl btn btn-primary w-[220px] mt-2 sm:mt-0 btnHover" %>
