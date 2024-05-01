@@ -1,0 +1,17 @@
+<section>
+  <div>
+    <h2 class="text-4xl md:text-5xl text-center"><%= "#{@birthM}月#{@birthD}日のBirth Dayポケモンは…" %></h2>
+  </div>
+  <div class="text-3xl mx-auto max-w-xl mt-10">
+    <div>
+      <div class="text-center">未実装でした。次の冒険を待とう！</div>
+      <div><%= image_tag @item["sprites"]["default"], class:"w-[100px] mx-auto" %></div>
+    </div>
+    <div class="text-center sm:flex justify-center gap-1 mt-3">
+      <%= link_to "https://twitter.com/share?url=https://my-mini-app-chew.onrender.com&text=私の誕生日（#{@birthM}月#{@birthD}日）ポケモンは、「未実装」でした。%0a", target: '_blank', class: "max-w[220px] w-max" do %>
+      <div class="text-gray-800 text-2xl btn btn-accent w-max max-w-[220px] "> Twitter(X)で共有</div>
+      <% end %>
+      <%= link_to "Homeに戻る" ,root_path ,class: "text-gray-800 text-2xl btn btn-primary w-[220px] mt-2 sm:mt-0" %>
+    </div>
+  </div>
+</section>
