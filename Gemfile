@@ -68,3 +68,4 @@ end
 
 # TailwindCSS
 gem 'cssbundling-rails'
+gem 'tailwindcss-rails'
