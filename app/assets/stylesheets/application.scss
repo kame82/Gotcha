@@ -67,3 +67,20 @@
   position: absolute;
   cursor: pointer;
 }
+
+.no-spin::-webkit-inner-spin-button,
+.no-spin::-webkit-outer-spin-button {
+  -webkit-appearance: none;
+  margin: 0;
+  -moz-appearance: textfield;
+}
+
+.btn.btnHover {
+  border-bottom: solid 4px #627295;
+  transition: all 0.1s ease 0s;
+
+  &:hover {
+    transform: translateY(4px);
+    border-bottom: none;
+  }
+}

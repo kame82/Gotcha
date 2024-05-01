@@ -68,4 +68,5 @@ end
 
 # TailwindCSS
 gem 'cssbundling-rails'
+# 自動コンパイルのためにTailwind導入
 gem 'tailwindcss-rails'
