@@ -5,7 +5,7 @@
         <%= form_with url: '/pokemons' do |f|%>
           <%= f.label :birthday , "誕生日を入力してBirth Dayポケモンを捕まえよう", class: "text-3xl"%>
           <div class="mt-3 max-w-[300px] mx-auto">
-            <%= f.number_field :birthday ,minlength: 4,maxlength: 4, placeholder: "1月1日 →  '0101'  で入力",class: "w-[100%] text-gray-900"%>
+            <%= f.number_field :birthday ,minlength: 4,maxlength: 4, placeholder: "1月1日 →  '0101'  で入力",class: "w-[100%] text-gray-900" %>
           </div>
           <div class="mt-10 ballWarp">
             <div class="ball">
